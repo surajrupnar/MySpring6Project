@@ -8,13 +8,17 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+    <bean id = "happyFortune"
+    	  class ="com.luv2code.springdemo.HappyFortuneService">
+    
+    </bean>
 	<bean id = "myCoach"
 			class = "com.luv2code.springdemo.BaseballCoach">
-	
+			<constructor-arg ref = "happyFortune"/>
 	</bean>
+	
 	<bean id = "myCricketCoach"
 			class = "com.luv2code.springdemo.CricketCoach">
-	
 	</bean>
 </beans>
 
