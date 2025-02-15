@@ -19,6 +19,7 @@
 	
 	<bean id = "myCricketCoach"
 			class = "com.luv2code.springdemo.CricketCoach">
+			<property name = "fortuneService" ref="happyFortune"/>
 	</bean>
 </beans>
 

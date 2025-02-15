@@ -5,6 +5,7 @@ public class BaseballCoach implements Coach{
 	//define private fields and constructor
 	private FortuneService fortuneService;
 	
+	//Constructor injection
 	public BaseballCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
