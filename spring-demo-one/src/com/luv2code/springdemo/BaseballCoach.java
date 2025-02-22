@@ -19,5 +19,13 @@ public class BaseballCoach implements Coach{
 	public String getDailyFortune() {
 		return fortuneService.getDailyFortune();
 	}
+	
+	public void doMyStartupStuff() {
+		System.out.println("BaseballCoach: inside the doMyStartupStuff method");
+	}
+	
+	public void doMyCleanupStuff() {
+		System.out.println("BaseballCoach: inside the doMyCleanupStuff method");
+	}
 
 }
