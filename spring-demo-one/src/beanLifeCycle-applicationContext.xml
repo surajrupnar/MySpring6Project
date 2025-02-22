@@ -21,7 +21,9 @@
 			class = "com.luv2code.springdemo.BaseballCoach"> -->
 			
 	<bean id = "myCoach"
-			class = "com.luv2code.springdemo.BaseballCoach">
+			class = "com.luv2code.springdemo.BaseballCoach" 
+			init-method="doMyStartupStuff" 
+			destroy-method="doMyCleanupStuff">
 	
 			<constructor-arg ref = "happyFortune"/>
 			

@@ -19,6 +19,10 @@ public class BeanScopeSpringApplication {
 		System.out.println("\nMemory location of theCoach: "+theCoach);
 		
 		System.out.println("\nMemory location of theCoach: "+alphaCoach);
+		
+		//close context
+		context.close();
 	}
 
+	
 }
